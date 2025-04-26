@@ -1,0 +1,182 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Navbar */
+nav {
+  background-color: #ef5350;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/* Main container */
+.container {
+  width: 100%; /* Use full width of the screen */
+  margin: 0;
+  padding: 1rem;
+  max-width: 100%; /* Remove any limits on width */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Center content */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Ensures cards fill width */
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Individual Card */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 100%; /* Ensure full width for cards */
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 180px; /* Adjust size of the Pokémon image */
+  height: 180px;
+  object-fit: contain;
+}
+
+.card h3 {
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+
+/* Pagination */
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pagination button {
+  background: #ef5350;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button.prev-next {
+  width: 100px;
+}
+
+.pagination span {
+  align-self: center;
+}
+
+
+/* Individual Pokémon Page */
+.detail-container {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Reasonable limit for large screens */
+  box-sizing: border-box;
+}
+
+.detail-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.detail-card h2 {
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+.type-badge {
+  display: inline-block;
+  background: #1976d2;
+  color: white;
+  border-radius: 10px;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem;
+  font-size: 0.9rem;
+}
+
+/* About Page */
+.about-container {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-container h2 {
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px; /* Limit the width for text readability */
+}
